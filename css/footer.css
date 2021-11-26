@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Rajdhani:wght@500;600&display=swap");
+
+/*------- Footer CSS -----------*/
+.footer {
+	margin: 0;
+	padding: 50px 60px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #171717;
+}
+
+/*-----footer-items = NEWSLETTER,INFORMATION, LOCATION, SOCIAL,-----------*/
+.footer-items .newsletter,
+.categories,
+.information,
+.Location,
+.social {
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-items: space-between;
+	margin-left: 40px;
+}
+.footer .footer-items h5 {
+	font-size: 22px;
+	font-weight: bolder;
+	color: #fff;
+	font-family: "Rajdhani", sans-serif;
+	margin-bottom: 20px;
+}
+/* --------newsletter---------*/
+.footer-items .newsletter ul li {
+	list-style-type: none;
+	text-decoration: none;
+	display: block;
+	line-height: 1.5;
+	color: rgb(245, 245, 245, 0.75);
+	margin-top: 5px;
+	font-size: 13px;
+	font-weight: 600;
+	font-family: "Montserrat", sans-serif;
+}
+.newsletter ul li span {
+	color: #ffd900;
+}
+.newsletter label {
+	position: relative;
+}
+.newsletter label input {
+	border: 1px;
+	border-radius: 8px;
+	padding: 10px;
+	width: 240px;
+	height: 22px;
+}
+.newsletter label .subscribe {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	border: 1px;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	background: #ffd900;
+	width: 50px;
+}
+.newsletter label p {
+	padding-top: 6px;
+	color: #000;
+	font-weight: 500;
+	font-size: 8px;
+}
+/* --------CATEGORY ---------*/
+/* .footer-items .categories {
+	max-width: 300px;
+	height: auto;
+} */
+.footer-items .categories ul li {
+	list-style-type: none;
+	text-decoration: none;
+	display: block;
+	line-height: 1.5;
+	margin-top: 5px;
+}
+.footer-items .categories ul li a {
+	font-weight: 600;
+	font-size: 13px;
+	color: rgb(245, 245, 245, 0.75);
+	text-decoration: none;
+	font-family: "Montserrat", sans-serif;
+}
+.footer-items .categories ul li a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+/* --------INFORMATION ---------*/
+.footer-items .information ul li {
+	list-style-type: none;
+	text-decoration: none;
+	display: block;
+	line-height: 1.5;
+	margin-top: 5px;
+	font-size: 13px;
+	font-weight: 600;
+}
+.footer-items .information ul li a {
+	color: rgb(245, 245, 245, 0.75);
+	text-decoration: none;
+}
+.footer-items .information ul li a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+/* --------LOCATION ---------*/
+.footer-items .Location ul li {
+	color: rgb(245, 245, 245, 0.75);
+	list-style-type: none;
+	display: block;
+	line-height: 1.5;
+	margin-top: 5px;
+	font-size: 13px;
+	font-weight: 600;
+}
+.footer-items .Location ul li a {
+	text-decoration: none;
+}
+.footer-items .Location ul li .fa {
+	color: #ffd900;
+	font-size: 14px;
+}
+.footer-items .Location ul li :hover {
+	color: #fff;
+	cursor: default;
+}
+
+/* --------SOCIAL ---------*/
+.footer-items .social ul li {
+	list-style-type: none;
+	text-decoration: none;
+	display: block;
+	margin-top: 5px;
+	line-height: 1.5;
+	position: relative;
+	text-align: center;
+}
+
+.footer-items .social ul li img {
+	width: 20px;
+	transition: 0.2s ease-in-out;
+}
+.footer-items .social ul li :hover img {
+	width: 30px;
+}
+
+/*-------------------- footer Bot --------------*/
+.footer-bot {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	background: #202020;
+	padding: 5px;
+	position: relative;
+	bottom: 0;
+	align-items: center;
+	justify-content: center;
+}
+.footer-bot .footer-images li {
+	display: inline;
+	padding-left: 50px;
+}
+/* COD image size */
+.footer-bot .footer-images li .img1 {
+	max-width: 75px;
+	margin-left: 20px;
+}
+/* esewa image size */
+.footer-bot .footer-images li .img2 {
+	max-width: 90px;
+}
+/* khalti image size */
+.footer-bot .footer-images li .img3 {
+	max-width: 95px;
+}
+/* fonepay image size */
+.footer-bot .footer-images li .img4 {
+	max-width: 120px;
+}
+/* master card & visa image size */
+.footer-bot .footer-images li .img5,
+.img6 {
+	max-width: 65px;
+}
+
+.footer-bot p {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	font-family: "Rajdhani", sans-serif;
+}
+.footer-bot p span {
+	color: #ffd900;
+	font-family: "Rajdhani", sans-serif;
+}
+
+/*-------------------- footer Bot --------------*/
+
+@media all and (max-width: 600px) {
+	.footer .footer-items {
+		flex-direction: row;
+	}
+
+	.footer .footer-bot {
+		flex-direction: row;
+	}
+}
+/*------- Footer CSS  end-----------*/
